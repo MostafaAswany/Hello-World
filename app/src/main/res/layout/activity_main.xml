@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="helloworld.android.example.com.helloworld.MainActivity">
+
+<ImageView
+    android:layout_height="210dp"
+    android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/app_udacity"
+    android:id="@+id/image"
+    android:scaleType="centerCrop" />
+
+<ImageView
+    android:id="@+id/url_image"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:src="@drawable/u_logo"
+    android:layout_marginTop="177dp"
+    android:layout_centerHorizontal="true"
+    android:contentDescription="@string/udacity_website" />
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingTop="40dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:orientation="vertical"
+    android:layout_below="@id/image">
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:text="@string/udacity"
+        android:layout_weight="1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:text="@string/address"
+        android:layout_weight="1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:text="@string/address2"
+        android:layout_weight="1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:text="@string/phone_num"
+        android:layout_weight="1"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+</RelativeLayout>
